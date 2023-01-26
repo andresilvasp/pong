@@ -109,7 +109,7 @@ function colisaoMinhaRaqueteBiblioteca(x, y) {
   coludiu = collideRectCircle(x, y, raqueteComprimento, raqueteAltura, xbolinha, ybolinha, raio);
   if (coludiu) {
     velocidadeXbolinha *= -1;
-    //raquetada.play();
+    raquetada.play();
   }
 }
 
@@ -144,12 +144,12 @@ function incluirPlacar() {
 function marcarPontos() {
   if (xbolinha > 590) {
     meusPontos += 1;
-    //ponto.play();
+    ponto.play();
   }
 
   if (xbolinha < 10) {
     pontosDoOponente += 1;
-    //ponto.play();
+    ponto.play();
   }
 }
 
